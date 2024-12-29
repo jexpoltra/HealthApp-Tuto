@@ -6,6 +6,7 @@ public class DropdownSceneChanger : MonoBehaviour
     public TMP_Dropdown dropdown; // Verknüpfe das Dropdown im Inspektor
     public GameObject pageHome; // Verknüpfe das Home-Panel
     public GameObject pageKnowledge; // Verknüpfe das Knowledge-Panel
+    public GameObject pageTraining; // Verknüpfe das Training-Panel
 
     void Start()
     {
@@ -27,6 +28,9 @@ public class DropdownSceneChanger : MonoBehaviour
             case 1:
                 ShowKnowledgePage();
                 break;
+            case 2:
+                ShowTrainingPage();
+                break;
             default:
                 Debug.LogWarning("Ungültige Auswahl im Dropdown.");
                 break;
@@ -37,11 +41,20 @@ public class DropdownSceneChanger : MonoBehaviour
     {
         pageHome.SetActive(true);
         pageKnowledge.SetActive(false);
+        pageTraining.SetActive(false);
     }
 
     void ShowKnowledgePage()
     {
         pageHome.SetActive(false);
         pageKnowledge.SetActive(true);
+        pageTraining.SetActive(false);
+    }
+
+    void ShowTrainingPage()
+    {
+        pageHome.SetActive(false);
+        pageKnowledge.SetActive(false);
+        pageTraining.SetActive(true);
     }
 }
