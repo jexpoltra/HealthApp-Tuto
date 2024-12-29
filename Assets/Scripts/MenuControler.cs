@@ -35,15 +35,15 @@ public class MenuControler : MonoBehaviour
             currentPage = appPageToOpen.name;
             Debug.Log($"Current Page Set to: {currentPage}");
 
-            if (appPageToOpen.name == "pageHome")
-            {
-                backButton.SetActive(false);
-            }
-            else
+            if (appPageToOpen.name != "pageHome")
             {
                 backButton.SetActive(true);
             }
-            
+            else
+            {
+                backButton.SetActive(false);
+            }
+
         }
     }
 
@@ -52,11 +52,12 @@ public class MenuControler : MonoBehaviour
 
 
 
-    public void SetChildrenState(GameObject parentObject, Boolean activate)
-    {
-        foreach (Transform child in parentObject.transform)
+        public void SetChildrenState(GameObject parentObject, Boolean activate)
         {
-            child.gameObject.SetActive(activate);
+            foreach (Transform child in parentObject.transform)
+            {
+                child.gameObject.SetActive(activate);
+            }
         }
     }
-}
+

@@ -7,6 +7,7 @@ public class DropdownSceneChanger : MonoBehaviour
     public GameObject pageHome; // Verknüpfe das Home-Panel
     public GameObject pageKnowledge; // Verknüpfe das Knowledge-Panel
     public GameObject pageTraining; // Verknüpfe das Training-Panel
+    public GameObject backButton;
 
     void Start()
     {
@@ -49,6 +50,7 @@ public class DropdownSceneChanger : MonoBehaviour
         pageHome.SetActive(false);
         pageKnowledge.SetActive(true);
         pageTraining.SetActive(false);
+        backButton.SetActive(true);
     }
 
     void ShowTrainingPage()
@@ -56,5 +58,6 @@ public class DropdownSceneChanger : MonoBehaviour
         pageHome.SetActive(false);
         pageKnowledge.SetActive(false);
         pageTraining.SetActive(true);
+        backButton.SetActive(true);
     }
 }
