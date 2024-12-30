@@ -43,6 +43,7 @@ public class DropdownSceneChanger : MonoBehaviour
         pageHome.SetActive(true);
         pageKnowledge.SetActive(false);
         pageTraining.SetActive(false);
+        backButton.SetActive(false);
     }
 
     void ShowKnowledgePage()
