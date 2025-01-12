@@ -93,4 +93,19 @@ public class MenuControler : MonoBehaviour
             child.gameObject.SetActive(activate);
         }
     }
+
+    // Methode zum Schließen eines spezifischen Dropdown-Menüs
+    public void CloseDropdownMenu(GameObject dropdownMenu)
+    {
+        if (dropdownMenu != null && dropdownMenu.activeSelf)
+        {
+            dropdownMenu.SetActive(false); // Dropdown deaktivieren
+            Debug.Log($"Dropdown {dropdownMenu.name} geschlossen.");
+        }
+        else
+        {
+            Debug.LogWarning("Dropdown Menu nicht zu schließen (entweder null oder bereits geschlossen).");
+        }
+    }
+
 }
