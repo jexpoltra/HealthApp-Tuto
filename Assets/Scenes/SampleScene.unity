@@ -1153,6 +1153,11 @@ MonoBehaviour:
   m_SnapCollider: {fileID: 1069081911}
   m_DisableSnapColliderWhenSelected: 0
   m_SnapToCollider: {fileID: 1291399509}
+--- !u!1 &1156115717 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2785464347407083829, guid: c8342f71d978fe94bac364e73c7076b0, type: 3}
+  m_PrefabInstance: {fileID: 1381865171}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1169920385
 GameObject:
   m_ObjectHideFlags: 0
@@ -1556,6 +1561,17 @@ MonoBehaviour:
   m_MinAngleAllowed: 0.1
   m_MaxAngleAllowed: 2
   m_TimeUntilThresholdReachesMaxAngle: 3
+--- !u!114 &1334668232 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3204902344391369467, guid: c8342f71d978fe94bac364e73c7076b0, type: 3}
+  m_PrefabInstance: {fileID: 1381865171}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c6729a3294738e44b1d2eb74f13198e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1358952311 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5306746913048456055, guid: 86a5bf68cb51f4e44bd3893bd22a2ba7, type: 3}
@@ -2116,6 +2132,58 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1359814271661006710, guid: c8342f71d978fe94bac364e73c7076b0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1359814271661006710, guid: c8342f71d978fe94bac364e73c7076b0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1359814271661006710, guid: c8342f71d978fe94bac364e73c7076b0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1359814271661006710, guid: c8342f71d978fe94bac364e73c7076b0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1334668232}
+    - target: {fileID: 1359814271661006710, guid: c8342f71d978fe94bac364e73c7076b0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1334668232}
+    - target: {fileID: 1359814271661006710, guid: c8342f71d978fe94bac364e73c7076b0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1359814271661006710, guid: c8342f71d978fe94bac364e73c7076b0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1359814271661006710, guid: c8342f71d978fe94bac364e73c7076b0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToggleDropdownMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 1359814271661006710, guid: c8342f71d978fe94bac364e73c7076b0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: CloseDropdownMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 1359814271661006710, guid: c8342f71d978fe94bac364e73c7076b0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: MenuControler, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1359814271661006710, guid: c8342f71d978fe94bac364e73c7076b0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: MenuControler, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1359814271661006710, guid: c8342f71d978fe94bac364e73c7076b0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1156115717}
+    - target: {fileID: 1359814271661006710, guid: c8342f71d978fe94bac364e73c7076b0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5807495562412052297, guid: c8342f71d978fe94bac364e73c7076b0, type: 3}
       propertyPath: m_Name
       value: phoneCanvas
@@ -2124,6 +2192,22 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1109407790274764220}
+    - target: {fileID: 8194739887599561089, guid: c8342f71d978fe94bac364e73c7076b0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1334668232}
+    - target: {fileID: 8194739887599561089, guid: c8342f71d978fe94bac364e73c7076b0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToggleDropdownMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8855617649190742055, guid: c8342f71d978fe94bac364e73c7076b0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1334668232}
+    - target: {fileID: 8855617649190742055, guid: c8342f71d978fe94bac364e73c7076b0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToggleDropdownMenu
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
