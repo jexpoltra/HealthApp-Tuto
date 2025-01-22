@@ -1,13 +1,16 @@
+// Test-Kommentar hinzugefÃ¼gt
+
+
 using UnityEngine;
 
 public class TutorialPanelManager : MonoBehaviour
 {
     public GameObject[] Tutorials; // Array mit den Tutorial-Objekten
-    public GameObject[] Panels;    // Array mit den dazugehörigen Panels
+    public GameObject[] Panels;    // Array mit den dazugehï¿½rigen Panels
 
     void Update()
     {
-        // Überprüfe, welches Tutorial aktiv ist
+        // ï¿½berprï¿½fe, welches Tutorial aktiv ist
         for (int i = 0; i < Tutorials.Length; i++)
         {
             if (Tutorials[i].activeSelf) // Falls das Tutorial aktiviert ist
@@ -17,6 +20,25 @@ public class TutorialPanelManager : MonoBehaviour
             }
         }
     }
+public void SwitchToNextPage(int currentIndex)
+{
+    // Deaktiviere die aktuelle Seite
+    if (currentIndex >= 0 && currentIndex < Panels.Length)
+    {
+        Panels[currentIndex].SetActive(false); // Aktuelles Panel deaktivieren
+    }
+
+    // Aktiviere die nÃ¤chste Seite
+    int nextIndex = currentIndex + 1;
+    if (nextIndex < Panels.Length)
+    {
+        Panels[nextIndex].SetActive(true); // NÃ¤chstes Panel aktivieren
+    }
+    else
+    {
+        Debug.LogWarning("Es gibt keine weitere Seite."); // Optional: Warnung, wenn keine weitere Seite vorhanden ist
+    }
+}
 
     private void ActivatePanel(int index)
     {
