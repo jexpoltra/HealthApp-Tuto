@@ -7,24 +7,9 @@ public class MenuControler : MonoBehaviour
 {
     public GameObject appPages; // Container für alle Seiten
     private string currentPage;
-    public GameObject backButton;
     public GameObject pageHome; // Referenz zur "pageHome"
 
-    void Start()
-    {
-        // Überprüfe, ob die Startseite "pageHome" ist, und setze den BackButton entsprechend
-        if (pageHome != null && pageHome.activeSelf)
-        {
-            backButton.SetActive(false); // BackButton deaktivieren, wenn auf pageHome gestartet wird
-            currentPage = pageHome.name; // Setze die Startseite als aktuelle Seite
-            Debug.Log("Starting on pageHome, backButton disabled.");
-        }
-        else
-        {
-            backButton.SetActive(true); // BackButton aktivieren, falls eine andere Seite aktiv ist
-            Debug.Log("Starting on another page, backButton enabled.");
-        }
-    }
+   
 
     void Update()
     {
@@ -45,15 +30,7 @@ public class MenuControler : MonoBehaviour
             currentPage = appPageToOpen.name;
             Debug.Log($"Current Page Set to: {currentPage}");
 
-            // Gleiche Logik wie im Start: BackButton ein- oder ausblenden
-            if (appPageToOpen.name != "pageHome")
-            {
-                backButton.SetActive(true);
-            }
-            else
-            {
-                backButton.SetActive(false);
-            }
+          
         }
     }
 
