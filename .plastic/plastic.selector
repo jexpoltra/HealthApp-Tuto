@@ -1,4 +1,0 @@
-repository "Tutorial/Tutorial@9072176719039@cloud"
-  path "/"
-    br "/main"
-    co "/main"
